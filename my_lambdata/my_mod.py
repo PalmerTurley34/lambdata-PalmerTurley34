@@ -6,7 +6,6 @@ def date_cols(df, date_col):
     import pandas as pd
 
     df[date_col] = pd.to_datetime(df[date_col], infer_datetime_format=True)
-    
     df['Year'] = df[date_col].dt.year
     df['Month'] = df[date_col].dt.month
     df['Day'] = df[date_col].dt.day

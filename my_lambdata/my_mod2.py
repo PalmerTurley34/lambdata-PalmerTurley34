@@ -4,6 +4,6 @@ def list_to_col(df, lst, col_name):
     and adds that series to a given dataframe
     '''
 
-    import pandas as pd 
+    import pandas as pd
     series = pd.Series(lst)
     df[col_name] = series
