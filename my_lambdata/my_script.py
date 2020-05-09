@@ -12,3 +12,8 @@ print(df)
 colors = ['red', 'yellow', 'blue']
 list_to_col(df, colors, 'Colors')
 print(df)
+
+from my_lambdata.houses import House
+
+house2 = House(5, 3.5, '350,000')
+house2.info()
